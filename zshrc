@@ -18,5 +18,6 @@ alias ll='ls -l --color'
 alias la='ls -la --color'
 
 # rbenvの設定
-export PATH="/usr/local/rbenv/bin:$PATH"
+export RBENV_ROOT="/usr/local/rbenv"
+export PATH="${RBENV_ROOT}/bin:$PATH"
 eval "$(rbenv init -)"
