@@ -16,3 +16,7 @@ PROMPT="%{$fg[cyan]%}%n%{$reset_color%}@%{$fg[yellow]%}%m:%{$fg[green]%}%/%f%k%{
 alias ls='ls --color'
 alias ll='ls -l --color'
 alias la='ls -la --color'
+
+# rbenvの設定
+export PATH="/usr/local/rbenv/bin:$PATH"
+eval "$(rbenv init -)"
