@@ -1,9 +1,5 @@
 # Created by newuser for 5.2
 
-# 補完機能を有効にする 
-autoload -U compinit
-compinit
-
 # 文字コードをUTF-8に設定
 export LANG=ja_JP.UTF-8
 
@@ -21,3 +17,13 @@ alias la='ls -la --color'
 export RBENV_ROOT="/usr/local/rbenv"
 export PATH="${RBENV_ROOT}/bin:$PATH"
 eval "$(rbenv init -)"
+
+# zsh-completions
+if [ -d ${HOME}/.zsh/zsh-completions/src ] ; then
+   fpath=(${HOME}/.zsh/zsh-completions/src $fpath)
+fi
+
+# 補完機能を有効にする 
+autoload -U compinit
+compinit
+
