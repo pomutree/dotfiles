@@ -19,8 +19,8 @@ export PATH="${RBENV_ROOT}/bin:$PATH"
 eval "$(rbenv init -)"
 
 # zsh-completions
-if [ -d ${HOME}/.zsh/zsh-completions/src ] ; then
-   fpath=(${HOME}/.zsh/zsh-completions/src $fpath)
+if [ -d ${HOME}/dotfiles/zsh-completions/src ] ; then
+   fpath=(${HOME}/dotfiles/zsh-completions/src $fpath)
 fi
 
 # 補完機能を有効にする 

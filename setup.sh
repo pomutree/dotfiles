@@ -21,7 +21,7 @@ chsh -s /usr/bin/zsh ${user_name}
 chown -R ${user_name}:${user_name} /home/${user_name}/
 
 # zsh-completions追加
-git clone git://github.com/zsh-users/zsh-completions.git $HOME/dotfiles/
+git clone https://github.com/zsh-users/zsh-completions.git $HOME/dotfiles/zsh-completions
 
 # zshを利用
 zsh
