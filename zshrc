@@ -17,6 +17,7 @@ alias la='ls -la --color'
 export RBENV_ROOT="/usr/local/rbenv"
 export PATH="${RBENV_ROOT}/bin:$PATH"
 eval "$(rbenv init -)"
+#alias rails='/var/www/fldns.net/bin/rails'
 
 # zsh-completions
 if [ -d ${HOME}/dotfiles/zsh-completions/src ] ; then
@@ -27,3 +28,5 @@ fi
 autoload -U compinit
 compinit
 
+export NVM_DIR="/home/daiga/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

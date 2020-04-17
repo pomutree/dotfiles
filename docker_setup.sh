@@ -16,3 +16,7 @@ do
 done
 
 ln -vnfs $HOME/dotfiles/zshrc.docker $HOME/.zshrc
+
+# use zsh
+zsh
+source $HOME/.zshrc
